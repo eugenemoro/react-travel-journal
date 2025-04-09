@@ -1,3 +1,5 @@
+import marker from '../assets/marker.png';
+
 export default function Entry(props) {
   return (
     <div className="entry">
@@ -6,7 +8,7 @@ export default function Entry(props) {
       </div>
       <div className="entry-content-section">
         <p className="entry-location">
-          <img src="src/assets/marker.png" alt="marker icon" />
+          <img src={marker} alt="marker icon" />
           <span className="entry-location-name">{props.country}</span>
           <a href={props.googleMapsLink}>View on Google Maps</a>
         </p>
